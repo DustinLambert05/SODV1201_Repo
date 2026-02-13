@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Temperature Converter</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="main.js" defer></script>
+    </head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="markToGrade.html">Mark To Grade</a></li>
+                <li><a href="staff.html">Staff</a></li>
+                <li><a href="Temp.html">Temperature Converter</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="title-container">
+            <h1>Temperature Converter</h1>
+        </div>
+        <div class="content-container">
+            <div class="temperature-converter">
+                <div class="converter-header">
+                    <h2>Temperature Converter</h2>
+                    <p>Enter a temperature and select its unit to see conversions</p>
+                </div>
+                
+                <div class="temp-input-section">
+                    <div class="input-wrapper">
+                        <input type="number" id="temp-input" step="any" placeholder="Enter temperature..." oninput="convertTemperature()">
+                        <select id="unit-selector" onchange="convertTemperature()">
+                            <option value="celsius">Celsius (°C)</option>
+                            <option value="fahrenheit">Fahrenheit (°F)</option>
+                            <option value="kelvin">Kelvin (K)</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="conversion-results" id="conversion-results">
+                    <!-- Conversion results will appear here -->
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <p>Copyright © Of Dustin Lambert, 2026</p>
+        </div>
+    </footer>
+</body>
+</html>

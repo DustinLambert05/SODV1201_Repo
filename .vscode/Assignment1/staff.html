@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Staff</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="main.js" defer></script>
+    </head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="markToGrade.html">Mark To Grade</a></li>
+                <li><a href="staff.html">Staff</a></li>
+                <li><a href="Temp.html">Temperature Converter</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="title-container">
+            <h1>Staff</h1>
+        </div>
+        <div class="content-container">
+            <div class="staff-display">
+                <div class="staff-header">
+                    <h2>School of Technology - Staff Directory</h2>
+                    <div class="sort-controls">
+                        <button id="sortName" onclick="sortStaff('name')">Sort by Name ↕</button>
+                        <button id="sortSalary" onclick="sortStaff('salary')">Sort by Salary ↕</button>
+                    </div>
+                </div>
+                
+                <div class="table-container">
+                    <table id="staff-table" class="staff-table">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Position</th>
+                                <th>Office</th>
+                                <th>Salary</th>
+                            </tr>
+                        </thead>
+                        <tbody id="staff-tbody">
+                            <!-- Staff data will be populated here by JavaScript -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <p>Copyright © Of Dustin Lambert, 2026</p>
+        </div>
+    </footer>
+</body>
+</html>
